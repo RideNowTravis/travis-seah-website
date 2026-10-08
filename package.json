@@ -1,0 +1,11 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal property agent website. Copy lives in content.json.",
+  "scripts": {
+    "build": "node build.js --strict",
+    "preview": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}

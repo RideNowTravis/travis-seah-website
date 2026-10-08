@@ -1,0 +1,113 @@
+{
+  "_howToEdit": "Change the text in this file, then run the site again (or redeploy). Anything in [square brackets] is a placeholder you must fill in before the site goes live.",
+  "agent": {
+    "name": "Travis Seah",
+    "shortName": "Travis",
+    "ceaReg": "R069217A",
+    "agency": "PropNex Realty Pte Ltd",
+    "agencyLicence": "L3008022J",
+    "whatsapp": "6594786848",
+    "phoneDisplay": "+65 9478 6848",
+    "email": "",
+    "photo": ""
+  },
+  "meta": {
+    "title": "Travis Seah · Property Agent, Singapore",
+    "description": "Singapore property agent for HDB owners planning their next move. Clear numbers on your flat's value, your budget and your monthly cash flow before you decide."
+  },
+  "hero": {
+    "eyebrow": "property agent · singapore",
+    "line1": "I help families make their next property move.",
+    "line2": "But I'd rather you call me the agent who does the maths first.",
+    "badge": "free chat · no obligation · "
+  },
+  "marquee": [
+    "HDB resale",
+    "HDB to condo",
+    "upgrader planning",
+    "MOP year",
+    "condo purchase",
+    "rentals",
+    "islandwide"
+  ],
+  "approach": {
+    "label": "approach",
+    "intro": "Upgrading is two big decisions at once: selling your flat and buying your next home. Before we talk about listings, we work out whether it makes sense for your family at all.",
+    "steps": [
+      {
+        "title": "What is the next home for?",
+        "tag": "purpose",
+        "text": "A stable home to raise the family, or a way to build wealth over the next 5 to 10 years. The answer changes everything we look at."
+      },
+      {
+        "title": "Your block, your numbers",
+        "tag": "local data",
+        "text": "What flats near you have actually sold for, not a headline figure. Then your sale proceeds, CPF, loan and cash, added up honestly."
+      },
+      {
+        "title": "The costs nobody mentions",
+        "tag": "cash flow",
+        "text": "What you'd pay in cash each month once CPF no longer covers the mortgage, and the safety buffer you need if an income stops."
+      },
+      {
+        "title": "Hold or upgrade, side by side",
+        "tag": "decision",
+        "text": "Both options laid out so you and your partner can decide together, with no pressure either way."
+      }
+    ],
+    "promise": "If holding is the better choice for your family, I'll tell you."
+  },
+  "work": {
+    "label": "work",
+    "intro": "A few of the moves I've helped with. Details kept private for my clients.",
+    "items": [
+      {
+        "title": "The flat few buyers were allowed to buy",
+        "tag": "HDB sale",
+        "text": "A multi-generation flat with an ethnic quota restriction, so the pool of eligible buyers was very small. We set honest expectations, stayed patient, and the right buyer came at the sellers' asking price."
+      },
+      {
+        "title": "Two families, two condos",
+        "tag": "condo purchase",
+        "text": "Buyers guided from shortlist to keys, with the numbers checked at every step."
+      },
+      {
+        "title": "Three homes, three tenants",
+        "tag": "condo rental",
+        "text": "Condo leases matched with tenants and landlords."
+      }
+    ],
+    "stat": {
+      "value": "6",
+      "label": "transactions in the last 12 months"
+    }
+  },
+  "about": {
+    "label": "about",
+    "heading": "I listen first, then I bring the numbers.",
+    "paragraphs": [
+      "I'm Travis, a property agent registered since 2025, working mainly with HDB owners deciding on their next move, whether that's selling, upgrading or holding.",
+      "Most people I meet don't need a sales pitch. They need someone to sit down with them, understand what their family actually wants, and show them clearly what each option costs.",
+      "And once we work together, you'll hear from me regularly, even on weeks with no viewings."
+    ],
+    "points": [
+      "HDB owners and upgraders",
+      "Sale and purchase planned together",
+      "Updates even when there's no news"
+    ]
+  },
+  "contact": {
+    "label": "contact",
+    "heading": "let's talk.",
+    "text": "Thinking about selling, upgrading or simply what your flat is worth? Send me a WhatsApp or give me a call. I reply personally.",
+    "whatsappLabel": "WhatsApp me",
+    "callLabel": "Call",
+    "emailLabel": "Email",
+    "area": "Islandwide"
+  },
+  "footer": {
+    "big1": "maths",
+    "big2": "first.",
+    "privacy": "Your details are only used to reply to you. I won't add you to any list without your consent."
+  }
+}
