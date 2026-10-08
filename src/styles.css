@@ -104,6 +104,14 @@ img.photo { object-fit: cover; width: 100%; display: block; }
 /* footer */
 footer { background: var(--band); color: var(--paper); border-top: 1px solid #4E3324; padding-block: clamp(40px, 6vw, 72px) 32px; }
 .stackword { font-family: var(--display); font-weight: 800; font-stretch: 118%; font-size: clamp(56px, 16vw, 260px); line-height: 0.82; letter-spacing: -0.05em; margin: 0; text-transform: lowercase; overflow-wrap: anywhere; }
+.ask-ai { margin-top: clamp(40px, 6vw, 64px); padding-top: 28px; border-top: 1px solid #5A3E2E; }
+.ask-ai h2 { margin: 0 0 8px; font-family: var(--display); font-weight: 700; font-stretch: 106%; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.02em; }
+.ask-ai p { margin: 0 0 20px; color: var(--band-muted); max-width: 60ch; }
+.ai-ways { display: flex; flex-wrap: wrap; gap: 10px; }
+footer .pill.ghost { color: var(--paper); border-color: var(--paper); }
+footer .pill.ghost:hover { background: var(--paper); color: var(--band); }
+.ask-ai .ai-note { margin: 14px 0 0; font-size: 14px; min-height: 1.4em; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .legal { margin-top: 32px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--band-muted); }
 .legal p { margin: 0; max-width: 70ch; }
 

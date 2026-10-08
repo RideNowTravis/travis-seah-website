@@ -19,6 +19,38 @@ function findPlaceholders(obj, at = "", out = []) {
   return out;
 }
 
+// "Ask AI about me" block: each button opens the assistant in a new tab with the prompt filled in.
+// The prompt is also copied to the clipboard, as a fallback for assistants that ignore the pre-filled text.
+function askAi(c) {
+  const ai = c.askAi;
+  if (!ai || !ai.prompt) return "";
+  const site = c.agent.siteUrl ? ` (Travis Seah, property agent in Singapore: ${c.agent.siteUrl})` : "";
+  const prompt = ai.prompt.replace(/[.\s]*$/, "") + site;
+  const q = encodeURIComponent(prompt);
+  const providers = [
+    ["ChatGPT", `https://chatgpt.com/?q=${q}`],
+    ["Claude", `https://claude.ai/new?q=${q}`],
+    ["Perplexity", `https://www.perplexity.ai/search?q=${q}`],
+    ["Gemini", `https://gemini.google.com/app?q=${q}`],
+  ];
+  return `    <section class="ask-ai" aria-labelledby="ask-ai-h">
+      <h2 id="ask-ai-h">${esc(ai.label)}</h2>
+      <p>${esc(ai.text)}</p>
+      <div class="ai-ways">
+        ${providers.map(([n, u]) => `<a class="pill ghost ai" href="${esc(u)}" target="_blank" rel="noopener" data-prompt="${esc(prompt)}">${esc(n)}<span class="sr"> (opens in a new tab)</span></a>`).join("\n        ")}
+      </div>
+      <p class="ai-note" role="status" aria-live="polite"></p>
+    </section>
+    <script>
+      document.querySelectorAll(".ask-ai a.ai").forEach(function (a) {
+        a.addEventListener("click", function () {
+          var note = document.querySelector(".ai-note");
+          if (navigator.clipboard) navigator.clipboard.writeText(a.dataset.prompt).then(function () { note.textContent = ${JSON.stringify(ai.copiedNote || "")}; }, function () {});
+        });
+      });
+    </script>`;
+}
+
 function render(c) {
   const a = c.agent;
   const wa = String(a.whatsapp).replace(/\D/g, "");
@@ -154,6 +186,7 @@ function render(c) {
 <footer>
   <div class="wrap">
     <p class="stackword" aria-hidden="true">${esc(c.footer.big1)}<br>${esc(c.footer.big2)}</p>
+${askAi(c)}
     <div class="legal">
       <p>${esc(a.name)} · CEA Reg. No. ${esc(a.ceaReg)} · ${esc(a.agency)} · CEA Licence No. ${esc(a.agencyLicence)}</p>
       <p>${esc(c.footer.privacy)} © ${year}</p>

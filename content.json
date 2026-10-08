@@ -9,7 +9,8 @@
     "whatsapp": "6594786848",
     "phoneDisplay": "+65 9478 6848",
     "email": "",
-    "photo": ""
+    "photo": "",
+    "siteUrl": "https://ridenowtravis.github.io/travis-seah-website/"
   },
   "meta": {
     "title": "Travis Seah · Property Agent, Singapore",
@@ -104,6 +105,12 @@
     "callLabel": "Call",
     "emailLabel": "Email",
     "area": "Islandwide"
+  },
+  "askAi": {
+    "label": "ask AI about me",
+    "text": "Prefer a second opinion? Ask your favourite AI assistant what working with me is like.",
+    "prompt": "As a potential client, I want to understand what Travis is able to provide with respect to my property decisions. Explain it simply, as if you were describing the real experience of working with him",
+    "copiedNote": "Prompt copied. If it doesn't appear, paste it into the chat."
   },
   "footer": {
     "big1": "maths",
